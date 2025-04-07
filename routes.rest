@@ -1,0 +1,36 @@
+// LOCALHOST
+
+### Get all clients
+Send Request
+GET http://localhost:3000/clients
+
+### Get contact by Id
+Send Request
+GET http://localhost:3000/clients/6483ce3e3f46088356
+
+### Create contact
+Send Request
+POST http://localhost:3000/clients HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "67d0812b95c971d71c4fc8a6",
+    "Name": "nico",
+    "email": "nico@gmail.com",
+    "company": "nico@gmail.com"
+}
+
+### PUT contact
+Send Request
+PUT http://localhost:3000/clients/6483ce3e3f46080356e0c6d9
+content-type: application/json
+
+{
+    "email": "test5@example.com",
+    "name": "ava",
+    "ipaddress": "94.121.168.53"
+}
+
+### DELETE contact
+Send Request
+DELETE http://localhost:3000/clients/6483ce023f46080356e0c6d8
